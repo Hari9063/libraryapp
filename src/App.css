@@ -36,3 +36,160 @@
     transform: rotate(360deg);
   }
 }
+
+/* ---------- Global Styles ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("https://res.cloudinary.com/dxpgtxupe/image/upload/v1758494944/k_lib_m0zngi.jpg")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+/* Smooth fade-in animation */
+.App {
+  animation: fadeIn 1.2s ease-in;
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  color: #00d4ff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar ul li:hover {
+  color: #00d4ff;
+}
+
+/* ---------- Home Section ---------- */
+.home {
+  text-align: center;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:white;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.3s;
+}
+.title:hover{
+  color: greenyellow;
+
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 220px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(160, 165, 166, 0.5);
+}
+
+.card h3 {
+  color: #00d4ff;
+}
+
+.card button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background: #00d4ff;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card button:hover {
+  background: #008cff;
+}
+input {
+  padding: 0.5rem;
+  margin: 0.3rem;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  margin: 0.3rem;
+  padding: 0.5rem 1rem;
+  background: #00d4ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #008cff;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background: #282c34;
+  padding: 10px;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.container {
+  padding: 20px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

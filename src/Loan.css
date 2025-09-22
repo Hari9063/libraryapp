@@ -1,0 +1,59 @@
+.loans-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.form {
+  margin-bottom: 20px;
+}
+
+input {
+  margin: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.loan-card {
+  background: #2b2b3d;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px #61dafb;
+  transition: transform 0.2s;
+}
+
+.loan-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+h2, h3 {
+  color: #61dafb;
+}
